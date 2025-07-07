@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prediction Result</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='result.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <h1>Prediction Results</h1>
+
+    <div class="result-box">
+        <p><strong>Input Text:</strong><br>{{ input_text }}</p>
+        <hr>
+        <p><strong>Predicted Topic:</strong> {{ topic }}</p>
+        <p><strong>Topic Confidence:</strong> {{ topic_confidence }}%</p>
+        <hr>
+
+        <p><strong>Fake News Prediction:</strong> {{ fake_label }}</p>
+        <p><strong>Prediction Confidence:</strong> {{ fake_confidence }}%</p>
+    </div>
+    <br>
+    <a href="/" class="back-button">Try Another</a>
+</div>
+
+</body>
+</html>

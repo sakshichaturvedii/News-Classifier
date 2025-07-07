@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>News Classifier</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <h1> News Classifier</h1>
+
+    <form action="/predict" method="POST">
+        <div class="result-box">
+            <label for="news_text"><strong>Enter News Headline or Text:</strong></label><br>
+            <textarea name="news_text" rows="6" cols="70" required></textarea>
+        </div>
+
+        <br>
+        <button type="submit" class="back-button"> Predict</button>
+    </form>
+</div>
+
+</body>
+</html>
+
+
